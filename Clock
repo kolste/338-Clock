@@ -2,8 +2,7 @@
 // Wiring & Connections:								
 //												
 // RD0 Pin 19 to LED w/ 220Ω Series Resistor,	Output Signal		
-// RD1 Pin 20 to LED w/ 220Ω Series Resistor,	Output Signal			
-//												
+//
 //------------------------------------------------------------------------------------------------------------------------------
 
 #define _XTAL_FREQ 4000000
@@ -23,7 +22,7 @@
 
 int main()
 {
-  TRISD = 0x1; 					//Sets RD0 through RD7 as Outputs
+  TRISD = 0x1; 					//Sets RD0 as output and RD1 - RD7 as input
 						// 0 = Output
 						// 1 = Input
   while(1)
